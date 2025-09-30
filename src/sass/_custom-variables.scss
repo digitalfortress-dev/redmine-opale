@@ -1,0 +1,66 @@
+@use "sass:color";
+
+// Custom company branding variables
+// Override default theme colors with company brand colors
+
+// Company brand colors
+$company-primary: #4006AA !default;
+$company-secondary: #9501B9 !default;
+$company-accent: #DE25C2 !default;
+
+// Override main brand colors
+$brand-primary: $company-primary !default;
+$brand-accent: shade($company-primary, 100) !default;
+
+// Override core colors to match company branding
+$blue: $company-primary !default;
+$purple: $company-secondary !default;
+$pink: $company-accent !default;
+
+// Override component colors to use company branding
+$link-color: $company-primary !default;
+$link-hover-color: $company-secondary !default;
+
+// Override button colors
+$btn-primary-bg: $company-primary !default;
+$btn-primary-border: $company-primary !default;
+
+// Override header colors
+$header-bg: $company-primary !default;
+$top-menu-bg: shade($company-primary, 700) !default;
+
+// Override active states and highlights
+$component-active-bg: $company-primary !default;
+$component-active-border: $company-primary !default;
+
+// Override pagination active state
+$pagination-active-bg: $company-primary !default;
+$pagination-active-border: $company-primary !default;
+
+// Override progress bar
+$progress-bar-bg: $company-primary !default;
+
+// Override main menu active shadow
+$main-menu-shadow-active: $company-primary !default;
+
+// Override sidebar active elements
+$sidebar-link-active-side: $company-accent !default;
+
+// Override focus states for forms
+$input-border-focus: color.adjust($company-primary, $saturation: 25%) !default;
+
+// Override tracker colors to include company colors
+$tracker-custom-colors-map: (
+  8: (
+    background: $company-primary,
+    color: #fff
+  ),
+  9: (
+    background: $company-secondary,
+    color: #fff
+  ),
+  10: (
+    background: $company-accent,
+    color: #fff
+  )
+) !default;
