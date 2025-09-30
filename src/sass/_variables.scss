@@ -28,7 +28,7 @@ $wiki-page-more-vertical-space: true !default;
 
 // Colors
 
-$blue:                          #4006AA !default;
+$blue:                          #320487 !default;
 $indigo:                        #4e65e5 !default;
 $purple:                        #9501B9 !default;
 $pink:                          #DE25C2 !default;
@@ -94,7 +94,7 @@ $state-danger:                  shade($red, 100) !default;
 $body-bg:                       $white !default;
 $text-color:                    $gray-800 !default;
 
-$link-color:                    #169 !default;
+$link-color:                    $blue !default;
 $link-hover-color:              $red !default;
 $link-hover-decoration:         underline !default;
 $link-closed-decoration:        line-through !default;
